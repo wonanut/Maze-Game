@@ -3,11 +3,13 @@ A funny maze game implemented with python3.
 
 # 游戏介绍
 包含两个模块：使用四种算法生成迷宫以及迷宫的可视化以及可玩性设计。
+
 语言：Python3
+
 界面：
-1. 普通模式
+### 普通模式
 ![](./imgs/img1.png)
-2. 迷雾模式
+### 迷雾模式
 ![](./imgs/img2.png)
 
 # 版本更新
