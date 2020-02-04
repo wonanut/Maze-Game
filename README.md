@@ -64,7 +64,7 @@ python Maze.py
 
 
 
-### TODO lists
+## TODO lists
 
 - 游戏背景音乐以及交互音乐
 - 添加更人性化的显示界面
@@ -77,7 +77,7 @@ python Maze.py
 
 
 
-### Update information
+## Update information
 
 - 2020-02-04 ***v1.0.7*** 添加功能：
   1. 添加保存、读取地图功能
