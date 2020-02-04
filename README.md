@@ -45,7 +45,7 @@ git clone https://github.com/wonanut/Maze-Game.git
 进入根目录：
 
 ```
-cd Maze-game
+cd Maze-Game-master
 ```
 
 在确保安装了上述python库之后，执行命令
