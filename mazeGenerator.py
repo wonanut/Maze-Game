@@ -1,3 +1,9 @@
+# @Author: Howard Wonanut
+# @Version: v1.0.7
+# @Date: 2020-02-04
+
+import tkinter as tk
+
 import numpy as np
 import time
 import random
@@ -49,6 +55,27 @@ class Maze(object):
 				elif matrix[i][j] == 2:
 					print('▲', end = '')
 			print('')
+
+	def generate_matrix(self, mode, new_matrix):
+		assert mode in [-1, 0, 1, 2, 3], "Mode {} does not exist.".format(mode)
+		if mode == -1:
+			self.matrix = new_matrix
+		elif mode == 0:
+			self.generate_matrix_kruskal()
+		elif mode == 1:
+			self.generate_matrix_dfs()
+		elif mode == 2:
+			self.generate_matrix_prim()
+		elif mode == 3:
+			self.generate_matrix_split()
+
+	def resize_matrix(self, width, height, mode, new_matrix):
+		self.path = []
+		self.width = (width // 2) * 2 + 1
+		self.height = (height // 2) * 2 + 1
+		self.start = [1, 0]
+		self.destination = [self.height - 2, self.width - 1]
+		self.generate_matrix(mode, new_matrix)
 
 	def generate_matrix_dfs(self):
 		# 地图初始化，并将出口和入口处的值设置为0
